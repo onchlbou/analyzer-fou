@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+	<!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+	<!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Spotify Weekly Analyzer</title>
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <script type="text/jsx" src="index.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+
+</head>
+  
+  <style>
+    
+  </style>
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/1.6.2/jquery.mockjax.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="//cdn.rawgit.com/eligrey/FileSaver.js/babc6d9d8fc60e667ddeafb7a7d3b844ce761ab5/FileSaver.min.js"></script> -->
+
+<!-- React.js -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script> -->
+
+<body>
+
+	<noscript>
+	</noscript>
+	
+  <div id="container">
+    <!-- <div id="header">
+      <h1><i class="fa fa-spotify" style="color: rgba(0, 189, 142, 0.575)"></i></h1>
+    </div> -->
+    
+    <div id="root"></div>
+    <!-- <div id="playlistsContainer"></div> -->
+
+    <div id="rateLimitMessage" class="lead">
+      <p><i class="fa fa-bolt" style="font-size: 50px; margin-bottom: 20px"></i></p>
+      <p>Oops, Application has encountered a <a target="_blank" href="https://developer.spotify.com/web-api/user-guide/#rate-limiting">rate limiting</a> error while using the Spotify API. This might be because of the number of users currently exporting playlists, or perhaps because you have too many playlists to export all at once. Try <a target="_blank" href="https://github.com/watsonbox/exportify/issues/6#issuecomment-110793132">creating your own</a> Spotify application. If that doesn't work, please add a comment to <a target="_blank" href="https://github.com/watsonbox/exportify/issues/6">this issue</a> where possible resolutions are being discussed.</p>
+      <p style="margin-top: 50px">It should still be possible to export individual playlists, particularly when using your own Spotify application.</p>
+    <div>
+      
+  </div><!-- /.container -->   
+</body>
+</html>
