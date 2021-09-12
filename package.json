@@ -15,6 +15,7 @@
     "semantic-ui-react": "^0.88.2"
   },
   "devDependencies": {
+    "netlify-cli": "^6.8.12",
     "typescript": "3.8.3"
   },
   "scripts": {

@@ -1,3 +1,10 @@
-node_modules/*
+node_modules
 TODO
-.vscode/*
+.vscode
+# Local Netlify folder
+.netlify
+.env
+src/styles copy.css
+yarn-error.log
+yarn.lock
+build

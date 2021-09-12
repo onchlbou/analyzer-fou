@@ -30,6 +30,15 @@ html {
 h1 a { color: black; }
 h1 a:hover { color: black; text-decoration: none; }
 
+
+/* .ui.segment,
+.ui.primary.segment {
+    background: #1B1C1D;
+    color: rgba(255, 0, 0, 0.9);
+    background-color: aquamarine;
+} */
+
+
 nav.paginator:nth-child(1) {
   margin-top: -74px;
 }
@@ -37,6 +46,29 @@ nav.paginator:nth-child(1) {
 table {
   float: left;
 }
+
+/* Playlist Rows */
+.ui.selectable.ui.table tr.playlist-title:hover td {
+  cursor: pointer;
+  background-color:rgba(50, 255, 135, 0.301);
+}
+
+/* Track Rows */
+.ui.selectable.ui.table tr.track-title td {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.ui.selectable.ui.table tr.track-title:hover td {
+  cursor: pointer;
+  background-color:rgba(50, 255, 135, 0.301);
+}
+.ui.selectable.table tbody tr:hover,
+.ui.table tbody tr td.selectable:hover {
+  background: rgba(0, 0, 0, 0.00) !important;
+  color: rgba(0, 0, 0, 0.95) !important;
+}
+
+
 
 #playlists {
   display: none;
